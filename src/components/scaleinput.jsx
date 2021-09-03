@@ -9,10 +9,19 @@ class ScaleInput extends Component {
     const scale = [];
     const scaleOptions = this.props.options;
     for (let i = scaleOptions.min; i <= scaleOptions.max; i++) {
+      let className =
+        parseInt(this.props.lastAnswer) >= i
+          ? "scaleValue active"
+          : "scaleValue inactive";
       scale.push(
-        <div key={i} className="scaleValue">
+        <button
+          key={i}
+          value={i}
+          onClick={(e) => this.props.handleUserInput(e)}
+          className={className}
+        >
           {i}
-        </div>
+        </button>
       );
     }
     return scale;

@@ -1,3 +1,4 @@
+@import "common.css";
 .radioButtonGrid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -14,9 +15,4 @@
   color: white;
   border: 1px solid white;
   border-radius: 1vh;
-}
-
-.active {
-  color: black;
-  background-color: white;
 }

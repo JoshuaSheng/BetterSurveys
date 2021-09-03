@@ -10,7 +10,7 @@ function createQuestion(questionList, question, type, options) {
   const questionObj = {
     question: question,
     type: type,
-    answer: null,
+    answer: undefined,
   };
   switch (type) {
     case "radio":
@@ -38,9 +38,7 @@ createQuestion(
 createQuestion(questionList, "Which bear is best?", "radio", {
   options: ["brown", "black", "grizzly", "polar"],
 });
-createQuestion(questionList, "How old are you?", "dropdown", {
-  options: ["<18", "18-29", "30-49", "50-64", "66+"],
-});
+createQuestion(questionList, "How old are you?", "text");
 
 ReactDOM.render(
   <React.StrictMode>
