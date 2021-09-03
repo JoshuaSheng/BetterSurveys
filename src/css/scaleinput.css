@@ -1,0 +1,17 @@
+.scale {
+  display: flex;
+  font-size: 5vh;
+  color: white;
+  justify-content: space-between;
+}
+
+.scaleValue {
+  border: 2px solid white;
+  border-radius: 1vh;
+  margin: 1vh 2vh 1vh 0vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
