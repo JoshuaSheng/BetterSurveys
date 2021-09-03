@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../css/scaleinput.css";
+import "../css/common.css";
 
 class ScaleInput extends Component {
   highlightScale(e) {
@@ -11,8 +12,8 @@ class ScaleInput extends Component {
     for (let i = scaleOptions.min; i <= scaleOptions.max; i++) {
       let className =
         parseInt(this.props.lastAnswer) >= i
-          ? "scaleValue active"
-          : "scaleValue inactive";
+          ? "active scaleValue"
+          : "inactive scaleValue";
       scale.push(
         <button
           key={i}

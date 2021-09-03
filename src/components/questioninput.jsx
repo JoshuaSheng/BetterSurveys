@@ -45,6 +45,18 @@ class QuestionInput extends Component {
         </button>
       );
     }
+    if (questionNumber === numQuestionLength - 1) {
+      progressionKeys.push(
+        <button
+          key="2"
+          onClick={this.props.handleSubmission}
+          className="submit"
+          value="submit"
+        >
+          Submit
+        </button>
+      );
+    }
     return progressionKeys;
   }
 

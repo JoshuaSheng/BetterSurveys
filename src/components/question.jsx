@@ -19,6 +19,7 @@ class Question extends Component {
           questionData={questionData}
           questionNumber={questionNumber}
           handleProgression={this.props.handleProgression}
+          handleSubmission={this.props.handleSubmission}
         />
       </div>
     );

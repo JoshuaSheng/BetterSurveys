@@ -26,6 +26,9 @@ class App extends Component {
       this.setState({ questionNumber: questionNumber - 1 });
     }
   };
+  handleSubmission = () => {
+    return;
+  };
 
   render() {
     return (
@@ -35,6 +38,7 @@ class App extends Component {
           questionNumber={this.state.questionNumber}
           questionData={this.state.questionList}
           handleProgression={this.handleProgression}
+          handleSubmission={this.handleSubmission}
         />
       </div>
     );

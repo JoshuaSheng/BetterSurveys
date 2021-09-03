@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../css/radioinput.css";
+import "../css/common.css";
 
 class RadioInput extends Component {
   generateRadio() {
