@@ -5,8 +5,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 3001;
 
-const url =
-  "mongodb+srv://JoshuaSheng:joshua06@cluster0.c1cgm.mongodb.net/bettersurveys?retryWrites=true&w=majority";
+const url = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@cluster0.c1cgm.mongodb.net/bettersurveys?retryWrites=true&w=majority`;
 const client = new MongoClient(url);
 app.use(cors());
 
