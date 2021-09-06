@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 class App extends Component {
   state = {
-    questionNumber: 2,
+    questionNumber: 0,
     questionList: this.props.questions,
   };
 
@@ -26,8 +26,20 @@ class App extends Component {
       this.setState({ questionNumber: questionNumber - 1 });
     }
   };
-  handleSubmission = () => {
-    return;
+  handleSubmission = async () => {
+    const formSubmission = this.state.questionList.map(
+      (question) => question.answer
+    );
+    const surveyID = 20020618;
+    let options = {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ id: surveyID, data: formSubmission }),
+    };
+    let res = await fetch("http://localhost:3001", options);
+    console.log(res.ok);
   };
 
   render() {
