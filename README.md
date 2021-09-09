@@ -23,7 +23,7 @@ query key to get the data.
 All 3 components (the react.js frontend, the express.js backend, and the mongodb database) are all hosted on the cloud. The page is hosted by github pages, while the backend is 
 hosted by heroku and the database is hosted by MongoDB Atlasyh 
 
-###Plans:
+# Plans:
 
 This project is currently in development and quite far from being finished. Currently, I only have a sample survey, though the survey data storage and retrieval works well.
 Timeline:
