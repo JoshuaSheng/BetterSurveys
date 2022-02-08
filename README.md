@@ -21,7 +21,7 @@ submit, yet another call will be made to the express.js server to post data to p
 query key to get the data.
 
 All 3 components (the react.js frontend, the express.js backend, and the mongodb database) are all hosted on the cloud. The page is hosted by github pages, while the backend is 
-hosted by heroku and the database is hosted by MongoDB Atlasyh 
+hosted by heroku and the database is hosted by MongoDB Atlas.
 
 # Plans:
 
